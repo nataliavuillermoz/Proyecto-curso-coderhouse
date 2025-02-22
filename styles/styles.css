@@ -10,29 +10,47 @@ body{
   
 /*HEADER*/
 
-header{
+.navbar-edit{
     background-color: #c38b84;
     color: #f0ede8;
 }
 
-nav{
-    text-align: right;
-}
-
-nav a {
-    font-family: "Handlee";
-    text-decoration: none;
-    text-transform: uppercase;
+.navbar-edit a{
     color: #f0ede8;
-    font-size: 14px;
 }
 
-header img{
-    width: 30px;
+.navbar-edit a:hover{
+    text-decoration: underline;
+    color:#f0ede8;
+}
+.navbar-edit a:hover{
+    text-decoration: underline;
+    color:#f0ede8;
+}
+.navbar-edit .nav-link.active{
+    text-decoration: underline;
+    color:#f0ede8;
 }
 
-header p{
-    font-size: 16px;
+.navbar-edit p{
+    padding: 0 10px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar-edit .navbar-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.navbar-edit .navbar-brand:hover{
+    text-decoration: none;
+}
+.navbar-brand img{
+    max-width: 25px;
 }
 
 /*MAIN*/
