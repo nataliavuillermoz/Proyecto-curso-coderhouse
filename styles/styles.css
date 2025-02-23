@@ -141,3 +141,41 @@ footer p{
 }
 
 /**/
+.nuevo-evento{
+    align-items: center;
+    border: 1px solid #c38b84;
+    margin: 15px 0;
+    
+}
+.nuevo-evento span{
+    font-weight: 700;
+    
+}
+
+.fecha-prox-evento{
+    border: 1px solid #c38b84;
+  
+    text-align: center;
+    padding: 0;
+}
+
+.mes-anio{
+    font-size: 2rem;
+    background-color: #c38b84;
+    color: #f0ede8;
+    border-bottom: 1px solid #c38b84;
+    margin-bottom: 0;
+}
+
+.num-día{
+    font-size: 5rem;
+    margin-bottom: 0;
+    
+}
+
+.datos-entrada{
+    text-align: right;
+    justify-content: end;
+
+
+}
