@@ -11,64 +11,64 @@ body{
 /*HEADER*/
 
 .navbar-edit{
-    background-color: #c38b84;
-    color: #f0ede8;
+    background-color: transparent;
+    color: #c38b84;
 }
 
 .navbar-edit a{
-    color: #f0ede8;
+    color: #c38b84;
+    font-family: "Special Elite", serif;
+    text-transform: none;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .navbar-edit a:hover{
     text-decoration: underline;
-    color:#f0ede8;
+
 }
 .navbar-edit a:hover{
     text-decoration: underline;
-    color:#f0ede8;
+    color:#c38b84;
 }
 .navbar-edit .nav-link.active{
-    text-decoration: underline;
-    color:#f0ede8;
-}
-
-.navbar-edit p{
-    padding: 0 10px;
-    margin: 0;
+    background-color:#c38b84;
+    color: #fff;
     text-decoration: none;
 }
 
 .navbar-edit .navbar-brand{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-
+    max-width: 200px;
 }
 
 .navbar-edit .navbar-brand:hover{
     text-decoration: none;
 }
 .navbar-brand img{
-    max-width: 25px;
+   max-width: 100%;
 }
 
 /*MAIN*/
 
 h1{
-    font-family: "Handlee", serif;
-    text-transform: uppercase;
-    font-size: 2rem;  
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;  
+    padding: 15px 0 5px 0;
 }
 
 h2{
-    font-family: "Cedarville Cursive", serif;
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.5rem;
-    font-weight: 500;
 }
 
 p{
-    font-family: "Handlee", serif;
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
 }
 
@@ -82,8 +82,13 @@ p{
     text-decoration: none;
     max-width: 40px;
     margin-right:10px;
+    opacity: 0.8;
     
 }
+.redes-sociales a:hover{
+    opacity: 1; 
+}
+
 .redes-sociales img{
     width: 100%;
 }
@@ -97,6 +102,32 @@ img{
     padding: 20px 30px;
 }
 
+.titulos-inicio img{
+    max-width: 450px;
+ }
+
+.fondo-inicio{
+   background-image: url(../assets/img/fondo-inicio.png);
+}
+
+.titulo-section{
+    background-color: #c38b84;
+    color: #f0ede8;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+.titulo-section h1{
+    font-size: 2rem;
+}
+.organizadora-uno {
+    text-align: left;
+    align-items: center;
+}
+.organizadora-dos{
+    text-align: right;
+    align-items: center
+}
 /*FOOTER*/
 
 footer{
@@ -106,4 +137,7 @@ footer{
 footer p{
     color:#f0ede8;
     text-align: center;
+    margin-bottom: 0;
 }
+
+/**/
