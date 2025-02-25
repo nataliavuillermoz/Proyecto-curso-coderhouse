@@ -76,12 +76,8 @@ img{
     max-width: 100%;
 }
 
-section{
-    min-height: 100vh;
-    padding-top: 50px;
-}
 .titulo-section{
-    background-color: #c38b84;
+    background-color: #a8a77a;
     color: #f0ede8;
     padding: 5px 15px;
     margin-bottom: 20px;
@@ -112,6 +108,24 @@ section{
     width: 100%;
 }
 
+.btn-edit{
+    background-color: #a8a77a;
+    border: #ccc;
+    color: #fff;
+}
+.btn-edit:hover{
+    background-color: #818062;
+    border: #111;
+    color: #ccc;
+}
+
+.btn-edit:active{
+    background-color: #818062;
+}
+.btn-edit:focus{
+    background-color: #818062;
+}
+
 /*INICIO*/
 
 .presentacion-proyecto{
@@ -140,16 +154,25 @@ section{
 
 /*NOSOTRAS*/
 
-.organizadora-uno {
+.organizadora {
     text-align: left;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
 }
-.organizadora-dos{
+.organizadora div{
+    margin-top: 10px ;
+}
+.organizadora.dos{
     text-align: right;
-    align-items: center;
-    padding: 25px;
 }
+.organizadora h2{
+    margin-bottom: 0;
+}
+
+.titulos-org{
+    color:#686463;    
+}
+
 
 /*AGENDA*/
 .nuevo-evento{
@@ -168,16 +191,20 @@ section{
     display: flex;
     flex-direction: column;
     border: 1px solid #c38b84;
+    border-top:none;
     text-align: center;
     padding: 0;
     justify-content: center;
     box-shadow: 1px 2px 2px #ccc;
+    border-radius: 5px;
 }
 
 .mes-anio{
-    font-size: 2rem;
-    background-color: #c38b84;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #8d8077;
     color: #f0ede8;
+    padding: 2px;
     border-bottom: 1px solid #c38b84;
     margin-bottom: 0;
 }
@@ -200,15 +227,55 @@ section{
     box-shadow: 1px 2px 2px #ccc;
 }
 
+/*FOOTER*/
+.item-evento img{
+    border: 2px double #a8a77a;
+}
+.item-evento img:hover{
+    box-shadow: 1px 2px 2px #ccc;
+    cursor:pointer
+}
+
+.item-evento p{
+    margin-bottom: 2px;
+}
+
+/*FOOTER*/
+.contacto form{
+    margin-bottom: 15px;
+}
+.contacto img{
+    max-width: 300px;
+}
 
 /*FOOTER*/
 
 footer{
-    background-color: #c6a9a3;
+    background-color: #a8a77a;
+    padding: 15px 0;
 }
 
 footer p{
     color:#f0ede8;
     text-align: center;
     margin-bottom: 0;
+}
+
+/* Media query */
+@media (max-width: 767px) {
+    .presentacion-proyecto{
+        text-align: center;
+    }
+    .redes-sociales{
+        justify-content: center;
+    }
+    .nosotras p{
+        text-align: center;
+    }
+    .nosotras h2{
+        text-align: center;
+    }
+    .item-evento{
+        text-align: center;
+    }
 }
