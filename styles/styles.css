@@ -100,6 +100,7 @@ img{
     margin-right:2px;
     opacity: 0.8;
 }
+
 .redes-sociales a:hover{
     opacity: 1; 
 }
@@ -108,11 +109,14 @@ img{
     width: 100%;
 }
 
+/*BOTONES*/
+
 .btn-edit{
     background-color: #a8a77a;
     border: #ccc;
     color: #fff;
 }
+
 .btn-edit:hover{
     background-color: #818062;
     border: #111;
@@ -122,6 +126,7 @@ img{
 .btn-edit:active{
     background-color: #818062;
 }
+
 .btn-edit:focus{
     background-color: #818062;
 }
@@ -136,7 +141,6 @@ img{
     margin-bottom: 2px;
 }
 
-
 .titulos-inicio img{
     max-width: 300px;
  }
@@ -145,7 +149,6 @@ img{
    padding-right: 0;
    margin-bottom: 0;
    padding-bottom: 0;
-
 }
 
 .carousel{
@@ -159,12 +162,15 @@ img{
     align-items: center;
     padding: 15px;
 }
+
 .organizadora div{
     margin-top: 10px ;
 }
+
 .organizadora.dos{
     text-align: right;
 }
+
 .organizadora h2{
     margin-bottom: 0;
 }
@@ -173,16 +179,16 @@ img{
     color:#686463;    
 }
 
-
 /*AGENDA*/
+
 .nuevo-evento{
     background-color: aliceblue;
     align-items: center;
     box-shadow: 2px 2px 2px 2px #ccc;
     margin: 15px 0;
     padding: 20px 10px 10px 10px;
-    
 }
+
 .nuevo-evento span{
     font-weight: 700;
 }
@@ -228,9 +234,11 @@ img{
 }
 
 /*FOOTER*/
+
 .item-evento img{
     border: 2px double #a8a77a;
 }
+
 .item-evento img:hover{
     box-shadow: 1px 2px 2px #ccc;
     cursor:pointer
@@ -241,9 +249,11 @@ img{
 }
 
 /*FOOTER*/
+
 .contacto form{
     margin-bottom: 15px;
 }
+
 .contacto img{
     max-width: 300px;
 }
@@ -262,6 +272,7 @@ footer p{
 }
 
 /* Media query */
+
 @media (max-width: 767px) {
     .presentacion-proyecto{
         text-align: center;
