@@ -13,6 +13,7 @@ body{
 .navbar-edit{
     background-color: #f0ede8;
     color: #c38b84;
+    border-bottom: 1px solid #ccc;
 }
 
 .navbar-edit a{
@@ -277,16 +278,33 @@ footer p{
     .presentacion-proyecto{
         text-align: center;
     }
+
     .redes-sociales{
         justify-content: center;
     }
+
     .nosotras p{
         text-align: center;
     }
+
     .nosotras h2{
         text-align: center;
     }
+
     .item-evento{
         text-align: center;
     }
 }
+
+@media (max-width: 991px) { 
+    .navbar-edit{
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .navbar-edit a{
+        font-size: 18px;
+        padding: 2px 4px;
+        margin: 4px 0;
+    }
+ }
