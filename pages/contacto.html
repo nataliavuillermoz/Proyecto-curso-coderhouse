@@ -11,11 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Special+Elite&display=swap" rel="stylesheet">
-    <title> Ciclo de Lectura La pasión</title>
+    <title> La pasión - Ciclo de Poesía</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-edit ">
+        <nav class="navbar navbar-expand-lg navbar-edit fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">        
                     <img src="../assets/img/logo-lp-b.png" alt="Logo">
@@ -46,48 +46,66 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="contacto">
             <div class="titulo-section">
                 <h1>Contacto</h1>
             </div>
-            <div class="formulario-contacto">
-                <form action="/submit" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido">
-                    <label for="mail">Mail:</label>
-                    <input type="text" name="mail" id="mail">
-                    <label for="asunto">Asunto:</label>
-                    <select name="" id="">
-                        <option value="">Soy poeta, quiero participar</option>
-                        <option value="">Soy musico/a, quiero participar</option>
-                        <option value="">Soy lector/a, quiero dejar un mensaje</option>
-                        <option value="">Otro</option>
-                    </select>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje"></textarea>
-                    <input class="boton-enviar" type="submit" value="ENVIAR">
-                </form>
-            </div>
-            <div>
-                <img src="../assets/img/pluma-contacto.png" alt="Imagen de libros">
-            </div>
-            <div>
-                <img src="../assets/img/logo-icono-negro.png" alt="Logo">
-                <p>CICLO LITERARIO LA PASIÓN</p>
-            </div>
-            <div class="redes-sociales">
-                <p>Seguinos en:</p>
-                    <a href="">
-                        <img src="../assets/iconos/facebook_color.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/iconos/instagram_color.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/iconos/blogger_color.png" alt="">
-                    </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 formulario-contacto">
+                        <form class="row g-3">
+                            <div class="col-6">
+                                <label for="inputNombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" aria-label="First name">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputNombre" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" aria-label="Last name">
+                            </div>
+                            <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-12">
+                            <label for="inputAsunto" class="form-label">Asunto</label>
+                            <select id="inputAsunto" class="form-select">
+                                <option value="">Soy poeta, quiero participar</option>
+                                <option value="">Soy musico/a, quiero participar</option>
+                                <option value="">Soy lector/a, quiero dejar un mensaje</option>
+                                <option value="">Otro</option>
+                            </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="datos-contacto col">
+                    <div>
+                        <img src="../assets/img/pluma-contacto.png" alt="Imagen de libros">
+                    </div>
+                    <div>
+                        <img src="../assets/img/logo-lp.png" alt="Logo">
+                    </div>
+                    <div >
+                        <p>Seguinos en:</p>
+                        <div class="redes-sociales">
+                            <a href="">
+                                <img src="../assets/iconos/facebook_color.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="../assets/iconos/instagram_color.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="../assets/iconos/blogger_color.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
