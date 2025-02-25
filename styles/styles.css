@@ -77,6 +77,10 @@ img{
     max-width: 100%;
 }
 
+section{
+    min-height: 100vh;
+}
+
 .titulo-section{
     background-color: #a8a77a;
     color: #f0ede8;
