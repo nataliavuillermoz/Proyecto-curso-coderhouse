@@ -1,0 +1,68 @@
+.nuevo-evento{
+    background-color: aliceblue;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    margin: 15px 0;
+    padding: 20px 10px 10px 10px;
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.fecha-prox-evento{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c38b84;
+    border-top:none;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+    box-shadow: 1px 2px 2px #ccc;
+    border-radius: 5px;
+}
+
+.mes-anio{
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #8d8077;
+    color: #f0ede8;
+    padding: 2px;
+    border-bottom: 1px solid #c38b84;
+    margin-bottom: 0;
+}
+
+.num-día{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+
+.datos-entrada{
+    text-align: center;
+    justify-content: end;
+    border: 1px solid #c38b84;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 1px 2px 2px #ccc;
+
+    p{
+        margin:0;
+    }
+}
+
+
+.item-evento {
+    img{
+        border: 2px double #a8a77a;
+    }
+
+    &:hover{
+        box-shadow: 1px 2px 2px #ccc;
+        cursor:pointer;
+    }
+
+    &:p{
+        margin-bottom: 2px;
+    }
+}

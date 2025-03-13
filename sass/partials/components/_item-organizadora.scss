@@ -1,0 +1,21 @@
+.organizadora {
+    text-align: left;
+    align-items: center;
+    padding: 15px;
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    div{
+        margin-top: 10px ;
+    }
+
+    &.dos{
+        text-align: right;
+    }
+}
+
+.titulos-org{
+    color:#686463;    
+}

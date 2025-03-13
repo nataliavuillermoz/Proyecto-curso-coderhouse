@@ -1,314 +1,258 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
-body{
-    background-color: #f0ede8;
-}
-  
-/*HEADER*/
-
-.navbar-edit{
-    background-color: #f0ede8;
-    color: #c38b84;
-    border-bottom: 1px solid #ccc;
+img {
+  width: 100%;
 }
 
-.navbar-edit a{
-    color: #c38b84;
-    font-family: "Special Elite", serif;
-    text-transform: none;
-    font-size: 16px;
-    padding: 2px;
+body {
+  background-color: #f0ede8;
 }
 
-.navbar-edit a:hover{
-    text-decoration: underline;
-
-}
-.navbar-edit a:hover{
-    text-decoration: underline;
-    color:#c38b84;
-}
-.navbar-edit .nav-link.active{
-    background-color:#c38b84;
-    color: #fff;
-    text-decoration: none;
+h1 {
+  font-family: "IM Fell English SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+  padding: 15px 0 5px 0;
 }
 
-.navbar-edit .navbar-brand{
-    max-width: 100px;
+h2 {
+  font-family: "Special Elite", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
-.navbar-edit .navbar-brand:hover{
-    text-decoration: none;
-}
-.navbar-brand img{
-   max-width: 100%;
-}
-
-/*MAIN*/
-
-h1{
-    font-family: "IM Fell English SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.7rem;  
-    padding: 15px 0 5px 0;
+p {
+  font-family: "Special Elite", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }
 
-h2{
-    font-family: "Special Elite", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
+.titulo-section {
+  background-color: #a8a77a;
+  color: #f0ede8;
+  padding: 5px 15px;
+  margin-bottom: 20px;
 }
 
-p{
-    font-family: "Special Elite", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
+.titulo-section h1 {
+  font-size: 2rem;
 }
 
-img{
-    max-width: 100%;
+.navbar-edit {
+  background-color: #f0ede8;
+  color: #c38b84;
+  border-bottom: 1px solid #ccc;
+}
+.navbar-edit a {
+  color: #c38b84;
+  font-family: "Special Elite", serif;
+  text-transform: none;
+  font-size: 16px;
+  padding: 2px;
+}
+.navbar-edit a:hover {
+  text-decoration: underline;
+  color: #c38b84;
+}
+.navbar-edit .nav-link.active {
+  background-color: #c38b84;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-edit .navbar-brand {
+  max-width: 100px;
+}
+.navbar-edit .navbar-brand:hover {
+  text-decoration: none;
 }
 
-section{
-    min-height: 100vh;
+.btn-edit {
+  background-color: #a8a77a;
+  border: #ccc;
+  color: #fff;
+}
+.btn-edit:hover {
+  background-color: #818062;
+  border: #111;
+  color: #ccc;
+}
+.btn-edit:active {
+  background-color: #818062;
+}
+.btn-edit:focus {
+  background-color: #818062;
 }
 
-.titulo-section{
-    background-color: #a8a77a;
-    color: #f0ede8;
-    padding: 5px 15px;
-    margin-bottom: 20px;
+.redes-sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 20px;
+}
+.redes-sociales a {
+  text-decoration: none;
+  max-width: 40px;
+  margin-right: 2px;
+  opacity: 0.8;
+}
+.redes-sociales a:hover {
+  opacity: 1;
 }
 
-.titulo-section h1{
-    font-size: 2rem;
+.presentacion-proyecto {
+  padding: 20px 30px;
 }
 
-.redes-sociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-top: 20px;
+.presentacion-proyecto p {
+  margin-bottom: 2px;
 }
 
-.redes-sociales a{
-    text-decoration: none;
-    max-width: 40px;
-    margin-right:2px;
-    opacity: 0.8;
+.titulos-inicio img {
+  max-width: 300px;
 }
 
-.redes-sociales a:hover{
-    opacity: 1; 
+.fondo-inicio {
+  padding-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.redes-sociales img{
-    width: 100%;
+.carousel {
+  opacity: 0.9;
 }
-
-/*BOTONES*/
-
-.btn-edit{
-    background-color: #a8a77a;
-    border: #ccc;
-    color: #fff;
-}
-
-.btn-edit:hover{
-    background-color: #818062;
-    border: #111;
-    color: #ccc;
-}
-
-.btn-edit:active{
-    background-color: #818062;
-}
-
-.btn-edit:focus{
-    background-color: #818062;
-}
-
-/*INICIO*/
-
-.presentacion-proyecto{
-    padding: 20px 30px;
-}
-
-.presentacion-proyecto p{
-    margin-bottom: 2px;
-}
-
-.titulos-inicio img{
-    max-width: 300px;
- }
-
-.fondo-inicio{
-   padding-right: 0;
-   margin-bottom: 0;
-   padding-bottom: 0;
-}
-
-.carousel{
-    opacity: 0.9;
- }
-
-/*NOSOTRAS*/
 
 .organizadora {
-    text-align: left;
-    align-items: center;
-    padding: 15px;
+  text-align: left;
+  align-items: center;
+  padding: 15px;
+}
+.organizadora h2 {
+  margin-bottom: 0;
+}
+.organizadora div {
+  margin-top: 10px;
+}
+.organizadora.dos {
+  text-align: right;
 }
 
-.organizadora div{
-    margin-top: 10px ;
+.titulos-org {
+  color: #686463;
 }
 
-.organizadora.dos{
-    text-align: right;
+.nuevo-evento {
+  background-color: aliceblue;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  margin: 15px 0;
+  padding: 20px 10px 10px 10px;
+}
+.nuevo-evento span {
+  font-weight: 700;
 }
 
-.organizadora h2{
-    margin-bottom: 0;
+.fecha-prox-evento {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c38b84;
+  border-top: none;
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+  box-shadow: 1px 2px 2px #ccc;
+  border-radius: 5px;
 }
 
-.titulos-org{
-    color:#686463;    
+.mes-anio {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: #8d8077;
+  color: #f0ede8;
+  padding: 2px;
+  border-bottom: 1px solid #c38b84;
+  margin-bottom: 0;
 }
 
-/*AGENDA*/
-
-.nuevo-evento{
-    background-color: aliceblue;
-    align-items: center;
-    box-shadow: 2px 2px 2px 2px #ccc;
-    margin: 15px 0;
-    padding: 20px 10px 10px 10px;
+.num-día {
+  font-size: 5rem;
+  margin-bottom: 0;
 }
 
-.nuevo-evento span{
-    font-weight: 700;
+.datos-entrada {
+  text-align: center;
+  justify-content: end;
+  border: 1px solid #c38b84;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 1px 2px 2px #ccc;
+}
+.datos-entrada p {
+  margin: 0;
 }
 
-.fecha-prox-evento{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #c38b84;
-    border-top:none;
-    text-align: center;
-    padding: 0;
-    justify-content: center;
-    box-shadow: 1px 2px 2px #ccc;
-    border-radius: 5px;
+.item-evento img {
+  border: 2px double #a8a77a;
+}
+.item-evento:hover {
+  box-shadow: 1px 2px 2px #ccc;
+  cursor: pointer;
+}
+.item-evento:p {
+  margin-bottom: 2px;
 }
 
-.mes-anio{
-    border-radius: 5px;
-    font-size: 1.5rem;
-    background-color: #8d8077;
-    color: #f0ede8;
-    padding: 2px;
-    border-bottom: 1px solid #c38b84;
-    margin-bottom: 0;
+.contacto form {
+  margin-bottom: 15px;
+}
+.contacto img {
+  max-width: 300px;
 }
 
-.num-día{
-    font-size: 5rem;
-    margin-bottom: 0;
+footer {
+  background-color: #a8a77a;
+  padding: 15px 0;
 }
-
-.datos-entrada p{
-    margin:0;
+footer p {
+  color: #f0ede8;
+  text-align: center;
+  margin-bottom: 0;
 }
-
-.datos-entrada{
-    text-align: center;
-    justify-content: end;
-    border: 1px solid #c38b84;
-    padding: 10px;
-    margin: 5px;
-    box-shadow: 1px 2px 2px #ccc;
-}
-
-/*FOOTER*/
-
-.item-evento img{
-    border: 2px double #a8a77a;
-}
-
-.item-evento img:hover{
-    box-shadow: 1px 2px 2px #ccc;
-    cursor:pointer
-}
-
-.item-evento p{
-    margin-bottom: 2px;
-}
-
-/*FOOTER*/
-
-.contacto form{
-    margin-bottom: 15px;
-}
-
-.contacto img{
-    max-width: 300px;
-}
-
-/*FOOTER*/
-
-footer{
-    background-color: #a8a77a;
-    padding: 15px 0;
-}
-
-footer p{
-    color:#f0ede8;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-/* Media query */
 
 @media (max-width: 767px) {
-    .presentacion-proyecto{
-        text-align: center;
-    }
-
-    .redes-sociales{
-        justify-content: center;
-    }
-
-    .nosotras p{
-        text-align: center;
-    }
-
-    .nosotras h2{
-        text-align: center;
-    }
-
-    .item-evento{
-        text-align: center;
-    }
+  .presentacion-proyecto {
+    text-align: center;
+  }
+  .redes-sociales {
+    justify-content: center;
+  }
+  .nosotras p {
+    text-align: center;
+  }
+  .nosotras h2 {
+    text-align: center;
+  }
+  .item-evento {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-edit {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .navbar-edit a {
+    font-size: 18px;
+    padding: 2px 4px;
+    margin: 4px 0;
+  }
 }
 
-@media (max-width: 991px) { 
-    .navbar-edit{
-        text-align: center;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .navbar-edit a{
-        font-size: 18px;
-        padding: 2px 4px;
-        margin: 4px 0;
-    }
- }
+/*# sourceMappingURL=styles.css.map */

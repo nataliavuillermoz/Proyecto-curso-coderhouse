@@ -1,0 +1,30 @@
+.navbar-edit{
+    background-color: #f0ede8;
+    color: #c38b84;
+    border-bottom: 1px solid #ccc;
+
+    a{
+        color: #c38b84;
+        font-family: "Special Elite", serif;
+        text-transform: none;
+        font-size: 16px;
+        padding: 2px;
+
+        &:hover{
+            text-decoration: underline;
+            color: #c38b84; 
+        }
+    }
+
+    .nav-link.active{
+        background-color:#c38b84;
+        color: #fff;
+        text-decoration: none;
+    }
+    .navbar-brand{
+        max-width: 100px;
+    }
+    .navbar-brand:hover{
+        text-decoration: none;
+    }
+}

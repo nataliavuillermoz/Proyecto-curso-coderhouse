@@ -1,0 +1,37 @@
+.btn-edit{
+    background-color: #a8a77a;
+    border: #ccc;
+    color: #fff;
+
+    &:hover{
+        background-color: #818062;
+        border: #111;
+        color: #ccc;
+    }
+    
+    &:active{
+        background-color: #818062;
+    }
+    
+    &:focus{
+        background-color: #818062;
+    }
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+        max-width: 40px;
+        margin-right:2px;
+        opacity: 0.8;
+        
+        &:hover{
+            opacity: 1; 
+        }
+    }
+
+}
