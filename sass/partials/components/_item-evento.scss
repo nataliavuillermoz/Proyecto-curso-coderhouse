@@ -1,6 +1,9 @@
+@use '../utilities/variables' as *;
+
 .item-evento {
     img{
-        border: 2px double #a8a77a;
+        border: 2px double $border-color;
+        box-shadow: 1px 2px 3px $shadow-color;
     }
     p{
         color: grey;

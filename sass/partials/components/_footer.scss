@@ -1,8 +1,11 @@
+@use '../utilities/variables' as *;
+
 footer{
-    background-color: #a8a77a;
+    background-color:$color-secundario;
     padding: 15px 0;
+    border-top: 1px solid $border-color;
     p{
-        color:#f0ede8;
+        color: $txt-color-inverso;
         text-align: center;
         margin-bottom: 0;
     }
