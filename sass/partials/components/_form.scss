@@ -1,8 +1,14 @@
 .contacto {
         form{
         margin-bottom: 15px;
+        background-color: #fff;
+        align-items: center;
+        box-shadow: 2px 2px 2px 2px #ccc;
+        margin: 15px 0;
+        padding: 20px 10px 10px 10px;
     }
-        img{
-        max-width: 300px;
+        .logo-contacto{
+            padding: 50px;
+            opacity: 0.9;
+        }
     }
-}

@@ -5,12 +5,12 @@
 //UTILITIES
 @use 'partials/utilities/variables';
 
-
 //COMPONENTS
 @use 'partials/components/navbar';
 @use 'partials/components/botones';
 @use 'partials/components/inicio';
 @use 'partials/components/item-organizadora';
+@use 'partials/components/item-evento';
 @use 'partials/components/nuevo-evento';
 @use 'partials/components/form';
 @use 'partials/components/footer';

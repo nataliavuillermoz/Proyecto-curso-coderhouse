@@ -5,47 +5,6 @@
   box-sizing: 0;
 }
 
-img {
-  width: 100%;
-}
-
-body {
-  background-color: #f0ede8;
-}
-
-h1 {
-  font-family: "IM Fell English SC", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.7rem;
-  padding: 15px 0 5px 0;
-}
-
-h2 {
-  font-family: "Special Elite", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-}
-
-p {
-  font-family: "Special Elite", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-}
-
-.titulo-section {
-  background-color: #a8a77a;
-  color: #f0ede8;
-  padding: 5px 15px;
-  margin-bottom: 20px;
-}
-
-.titulo-section h1 {
-  font-size: 2rem;
-}
-
 .navbar-edit {
   background-color: #f0ede8;
   color: #c38b84;
@@ -107,6 +66,49 @@ p {
   opacity: 1;
 }
 
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #f0ede8;
+  background-image: url(../assets/img/background-web.png);
+  background-size: cover;
+}
+
+h1 {
+  font-family: "IM Fell English SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+  padding: 15px 0 5px 0;
+}
+
+h2 {
+  font-family: "Special Elite", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Special Elite", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.titulo-section {
+  background-color: #a8a77a;
+  color: #f0ede8;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+
+.titulo-section h1 {
+  font-size: 2rem;
+}
+
 .presentacion-proyecto {
   padding: 20px 30px;
 }
@@ -146,6 +148,13 @@ p {
 
 .titulos-org {
   color: #686463;
+}
+
+.item-evento img {
+  border: 2px double #a8a77a;
+}
+.item-evento p {
+  color: grey;
 }
 
 .nuevo-evento {
@@ -198,22 +207,17 @@ p {
   margin: 0;
 }
 
-.item-evento img {
-  border: 2px double #a8a77a;
-}
-.item-evento:hover {
-  box-shadow: 1px 2px 2px #ccc;
-  cursor: pointer;
-}
-.item-evento:p {
-  margin-bottom: 2px;
-}
-
 .contacto form {
   margin-bottom: 15px;
+  background-color: #fff;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  margin: 15px 0;
+  padding: 20px 10px 10px 10px;
 }
-.contacto img {
-  max-width: 300px;
+.contacto .logo-contacto {
+  padding: 50px;
+  opacity: 0.9;
 }
 
 footer {
