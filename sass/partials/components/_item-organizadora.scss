@@ -1,4 +1,6 @@
-@use '../utilities/variables' as *;
+@use '../utilities/maps' as *;
+@use '../components/inicio' as *;
+
 .organizadora {
     text-align: left;
     align-items: center;
@@ -18,10 +20,10 @@
 }
 
 .titulos-org{
-    color:#686463;    
+    color:map-get($colors, primario);
 }
 
 .organizadora img{
-    border: 2px double $border-color;
-    box-shadow: 1px 2px 3px $shadow-color;
+    @extend .border;
+    box-shadow: 1px 2px 3px map-get($colors, shadow);
 }

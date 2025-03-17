@@ -1,3 +1,5 @@
+@use '../utilities/maps' as *;
+@use '../utilities/mixins' as *;
 .btn-edit{
     background-color: #a8a77a;
     border: #ccc;
@@ -19,9 +21,7 @@
 }
 
 .redes-sociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+    @include flex(row,flex-start);
     padding-top: 20px;
     a{
         text-decoration: none;

@@ -1,11 +1,11 @@
-@use '../utilities/variables' as *;
+@use '../utilities/maps' as *;
 
 footer{
-    background-color:$color-secundario;
+    background-color:map-get($colors, secundario);
     padding: 15px 0;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid map-get($colors, border);
     p{
-        color: $txt-color-inverso;
+        color: map-get($colors, txt-i);
         text-align: center;
         margin-bottom: 0;
     }

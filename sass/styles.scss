@@ -3,51 +3,18 @@
 @use 'partials/base/base';
 
 //UTILITIES
-@use 'partials/utilities/variables';
+@use 'partials/utilities/maps';
+@use 'partials/utilities/mixins';
 
 //COMPONENTS
+@use 'partials/components/inicio';
 @use 'partials/components/navbar';
 @use 'partials/components/botones';
-@use 'partials/components/inicio';
 @use 'partials/components/item-organizadora';
 @use 'partials/components/item-evento';
 @use 'partials/components/nuevo-evento';
 @use 'partials/components/form';
 @use 'partials/components/footer';
 
-//MEDIA QUERIES
-
-@media (max-width: 767px) {
-    .presentacion-proyecto{
-        text-align: center;
-    }
-
-    .redes-sociales{
-        justify-content: center;
-    }
-
-    .nosotras p{
-        text-align: center;
-    }
-
-    .nosotras h2{
-        text-align: center;
-    }
-
-    .item-evento{
-        text-align: center;
-    }
-}
-
-@media (max-width: 991px) { 
-    .navbar-edit{
-        text-align: center;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .navbar-edit a{
-        font-size: 18px;
-        padding: 2px 4px;
-        margin: 4px 0;
-    }
- }
+//RESPONSIVE
+@use 'partials/utilities/responsive';

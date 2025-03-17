@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+    .presentacion-proyecto{
+        text-align: center;
+    }
+
+    .redes-sociales{
+        justify-content: center;
+    }
+
+    .nosotras p{
+        text-align: center;
+    }
+
+    .nosotras h2{
+        text-align: center;
+    }
+
+    .item-evento{
+        text-align: center;
+
+        img{
+            height: 400px;
+            object-position: top;
+        }
+    }
+
+    .fondo-inicio img{
+        width: 100%;        
+        max-height: 100px; 
+        object-fit: cover;  
+    }
+}
+
+@media (max-width: 991px) { 
+    .navbar-edit{
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .navbar-edit a{
+        font-size: 18px;
+        padding: 2px 4px;
+        margin: 4px 0;
+    }
+ }

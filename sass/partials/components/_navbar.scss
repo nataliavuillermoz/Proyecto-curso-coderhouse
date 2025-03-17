@@ -1,12 +1,12 @@
-@use '../utilities/variables' as *;
+@use '../utilities/maps' as *;
 
 .navbar-edit{
-    background-color: $bg-color;
-    color: $color-primario;
-    border-bottom: 1px solid $border-color;
+    background-color: map-get($colors, bg);
+    color: map-get($colors, primario);
+    border-bottom: 1px solid map-get($colors, border);
 
     a{
-        color: $color-primario;
+        color: map-get($colors, primario);
         font-family: "Special Elite", serif;
         text-transform: none;
         font-size: 16px;
@@ -14,12 +14,12 @@
 
         &:hover{
             text-decoration: underline;
-            color: $color-primario; 
+            color: map-get($colors, primario);
         }
     }
 
     .nav-link.active{
-        background-color:$color-primario; 
+        background-color:map-get($colors, primario);
         color: #fff;
         text-decoration: none;
     }

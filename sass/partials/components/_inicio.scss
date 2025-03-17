@@ -1,11 +1,11 @@
-@use '../utilities/variables' as *;
+@use '../utilities/maps' as *;
 
 img{
     width: 100%;
 }
 
 body{
-    background-color: $bg-color;
+    background-color: map-get($colors, bg);
     background-image: url(../assets/img/background-web.png);
     background-size: cover;
 }
@@ -14,7 +14,7 @@ h1{
     font-family: "IM Fell English SC", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: $txt-m;  
+    font-size: map-get($font-sizes, l); 
     padding: 15px 0 5px 0;
 }
 
@@ -22,33 +22,44 @@ h2{
     font-family: "Special Elite", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: $txt-l;
+    font-size: map-get($font-sizes, m);
 }
 
 p{
     font-family: "Special Elite", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: $txt-s;
+    font-size: map-get($font-sizes, s);
 }
 
 .titulo-section{
-    background-color: $color-secundario;
-    color: $txt-color-inverso;
+    background-color: map-get($colors, secundario);
+    color: map-get($colors, txt-i);
     padding: 5px 15px;
     margin-bottom: 20px;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid map-get($colors, border);
+
+    h1{
+        font-size: map-get($font-sizes, m);
+    }
 }
 
-.titulo-section h1{
-    font-size: $txt-m;
+.border{
+    border: 1px ridge map-get($colors, border);
 }
+
+.fondo-blanco{
+    background-color: #fff;
+    align-items: center;
+    border: 1px ridge map-get($colors, border);
+    box-shadow: 1px 2px 3px map-get($colors, shadow);
+}
+
 .presentacion-proyecto{
     padding: 20px 30px;
-}
-
-.presentacion-proyecto p{
-    margin-bottom: 2px;
+    p{
+        margin-bottom: 2px;
+    }
 }
 
 .titulos-inicio img{
@@ -60,7 +71,3 @@ p{
    margin-bottom: 0;
    padding-bottom: 0;
 }
-
-.carousel{
-    opacity: 0.9;
- }
