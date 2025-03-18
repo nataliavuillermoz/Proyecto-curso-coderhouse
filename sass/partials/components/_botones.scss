@@ -1,22 +1,50 @@
 @use '../utilities/maps' as *;
 @use '../utilities/mixins' as *;
+@use '../utilities/keyframes' as *;
+
+.active{
+    animation-name: nav-hover;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in ;
+    animation-duration: 0.3s;
+}
+
+
 .btn-edit{
-    background-color: #a8a77a;
+    background-color: map-get($colors, secundario );
     border: #ccc;
     color: #fff;
+    opacity: 0.9;
 
     &:hover{
-        background-color: #818062;
+        opacity: 1;
         border: #111;
-        color: #ccc;
+        color: #fff;
+        background-color:map-get($colors, secundario);
     }
     
     &:active{
-        background-color:#818062;
+        background-color:map-get($colors, secundario);
     }
     
     &:focus{
-        background-color:#818062 ;
+        background-color:map-get($colors, secundario );
+    }
+}
+
+.btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color:map-get($colors, secundario);
+}
+
+.btn-inactivo{
+    @extend .btn-edit;
+    background-color:grey;
+    color:#ccc;
+
+    &:hover{
+        background-color:grey;
+        color:#ccc;
+        cursor: default;
     }
 }
 
@@ -25,7 +53,7 @@
     padding-top: 20px;
     a{
         text-decoration: none;
-        max-width: 40px;
+        max-width: 50px;
         margin-right:2px;
         opacity: 0.8;
         

@@ -1,9 +1,9 @@
 @use '../utilities/maps' as *;
-@use '../utilities/mixins' as *;
 @use '../components/inicio' as *;
 
 .item-evento {
     padding: 25px;
+
     img{
         @extend .border;
         box-shadow: 1px 2px 3px map-get($colors, shadow);
@@ -11,18 +11,19 @@
         object-fit: cover;
         object-position: top;
     }
+
     p{
         margin-bottom: 0;
         font-size: map-get($font-sizes, s );
     }
+
     p:nth-child(2){
         color: #777;
         text-align: right;
     }
+
     p:nth-child(3){
         color: map-get($colors, txt);
         text-align: justify;
-        
-
     }
 }

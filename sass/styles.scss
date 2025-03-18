@@ -1,18 +1,18 @@
 //BASE
 @use 'partials/base/resets';
-@use 'partials/base/base';
 
 //UTILITIES
 @use 'partials/utilities/maps';
 @use 'partials/utilities/mixins';
+@use 'partials/utilities/keyframes';
 
 //COMPONENTS
 @use 'partials/components/inicio';
 @use 'partials/components/navbar';
 @use 'partials/components/botones';
-@use 'partials/components/item-organizadora';
-@use 'partials/components/item-evento';
-@use 'partials/components/nuevo-evento';
+@use 'partials/components/nosotras';
+@use 'partials/components/eventos';
+@use 'partials/components/agenda';
 @use 'partials/components/form';
 @use 'partials/components/footer';
 

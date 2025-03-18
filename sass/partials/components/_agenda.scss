@@ -6,6 +6,8 @@
     @extend .fondo-blanco;
     margin: 15px 0;
     padding: 20px 10px 10px 10px;
+    display: flex;
+    align-items: stretch; 
 
     span{
         font-weight: 700;
@@ -15,22 +17,23 @@
         @extend .border;
         margin: 10px 0
     }
+    p{
+        margin: 0px;
+    }
 }
 
 .fecha-prox-evento{
-    @include flex(column, center);
+    @include flex(column, space-around);
     border: 1px solid map-get($colors, border);
     border-top:none;
     text-align: center;
     padding: 0;
     box-shadow: 1px 2px 2px map-get($colors, shadow);
-    height: 100%;
-
 }
 
 .mes-anio{
     font-size: map-get($font-sizes, m);
-    background-color: map-get($colors, primario);
+    background-color: #464e5d;
     color: map-get($colors, bg);
     padding: 2px;
     border-bottom: 1px solid map-get($colors, border);
@@ -43,6 +46,12 @@
     margin-bottom: 0;
 }
 
-.datos-evento p{
-    margin-bottom: 4px;
+.nuevo-evento {
+    @include flex(row, stretch);
+
+}
+
+.reserva{
+    @include flex(row, center);
+    align-items: center;
 }

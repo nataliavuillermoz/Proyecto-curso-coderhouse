@@ -5,6 +5,29 @@
   box-sizing: 0;
 }
 
+@keyframes nav-hover {
+  0% {
+    background-color: transparent;
+    color: #c38b84;
+    opacity: 0.9;
+  }
+  100% {
+    background-color: #c38b84;
+    color: #f0ede8;
+    opacity: 1;
+  }
+}
+@keyframes resaltar {
+  0% {
+    color: #111;
+  }
+  50% {
+    color: rgb(166, 153, 83);
+  }
+  100% {
+    color: #111;
+  }
+}
 img {
   width: 100%;
 }
@@ -30,11 +53,15 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-family: "Special Elite", serif;
+}
+
 p {
   font-family: "Special Elite", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .titulo-section {
@@ -48,15 +75,8 @@ p {
   font-size: 2rem;
 }
 
-.border, .nuevo-evento img, .item-evento img, .organizadora img {
+.border, .nuevo-evento img, .item-evento img, .img-nosotras {
   border: 1px ridge #777;
-}
-
-.fondo-blanco, .contacto form, .nuevo-evento {
-  background-color: #fff;
-  align-items: center;
-  border: 1px ridge #777;
-  box-shadow: 1px 2px 3px #ccc;
 }
 
 .presentacion-proyecto {
@@ -65,15 +85,28 @@ p {
 .presentacion-proyecto p {
   margin-bottom: 2px;
 }
+.presentacion-proyecto p:hover {
+  animation-name: resaltar;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
 
 .titulos-inicio img {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .fondo-inicio {
   padding-right: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.fondo-blanco, .contacto form, .nuevo-evento, .invitados {
+  background-color: #fff;
+  align-items: center;
+  border: 1px ridge #777;
+  box-shadow: 1px 2px 3px #ccc;
 }
 
 .navbar-edit {
@@ -87,9 +120,10 @@ p {
   text-transform: none;
   font-size: 16px;
   padding: 2px;
+  opacity: 0.7;
 }
 .navbar-edit a:hover {
-  text-decoration: underline;
+  opacity: 1;
   color: #c38b84;
 }
 .navbar-edit .nav-link.active {
@@ -104,21 +138,44 @@ p {
   text-decoration: none;
 }
 
-.btn-edit {
+.active {
+  animation-name: nav-hover;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+.btn-edit, .btn-inactivo {
   background-color: #a8a77a;
   border: #ccc;
   color: #fff;
+  opacity: 0.9;
 }
-.btn-edit:hover {
-  background-color: #818062;
+.btn-edit:hover, .btn-inactivo:hover {
+  opacity: 1;
   border: #111;
+  color: #fff;
+  background-color: #a8a77a;
+}
+.btn-edit:active, .btn-inactivo:active {
+  background-color: #a8a77a;
+}
+.btn-edit:focus, .btn-inactivo:focus {
+  background-color: #a8a77a;
+}
+
+.btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  background-color: #a8a77a;
+}
+
+.btn-inactivo {
+  background-color: grey;
   color: #ccc;
 }
-.btn-edit:active {
-  background-color: #818062;
-}
-.btn-edit:focus {
-  background-color: #818062;
+.btn-inactivo:hover {
+  background-color: grey;
+  color: #ccc;
+  cursor: default;
 }
 
 .redes-sociales {
@@ -129,7 +186,7 @@ p {
 }
 .redes-sociales a {
   text-decoration: none;
-  max-width: 40px;
+  max-width: 50px;
   margin-right: 2px;
   opacity: 0.8;
 }
@@ -152,12 +209,23 @@ p {
   text-align: right;
 }
 
+.img-nosotras {
+  box-shadow: 1px 2px 3px #ccc;
+  padding: 2px;
+}
+
 .titulos-org {
   color: #c38b84;
 }
 
-.organizadora img {
-  box-shadow: 1px 2px 3px #ccc;
+.invitados {
+  margin-top: 100px;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+.invitados img {
+  max-width: 200px;
+  margin: 5px;
 }
 
 .item-evento {
@@ -171,7 +239,7 @@ p {
 }
 .item-evento p {
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .item-evento p:nth-child(2) {
   color: #777;
@@ -185,6 +253,8 @@ p {
 .nuevo-evento {
   margin: 15px 0;
   padding: 20px 10px 10px 10px;
+  display: flex;
+  align-items: stretch;
 }
 .nuevo-evento span {
   font-weight: 700;
@@ -192,22 +262,24 @@ p {
 .nuevo-evento img {
   margin: 10px 0;
 }
+.nuevo-evento p {
+  margin: 0px;
+}
 
 .fecha-prox-evento {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   border: 1px solid #777;
   border-top: none;
   text-align: center;
   padding: 0;
   box-shadow: 1px 2px 2px #ccc;
-  height: 100%;
 }
 
 .mes-anio {
   font-size: 2rem;
-  background-color: #c38b84;
+  background-color: #464e5d;
   color: #eff6fe;
   padding: 2px;
   border-bottom: 1px solid #777;
@@ -220,8 +292,17 @@ p {
   margin-bottom: 0;
 }
 
-.datos-evento p {
-  margin-bottom: 4px;
+.nuevo-evento {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.reserva {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacto form {
@@ -237,6 +318,12 @@ p {
 }
 .contacto input {
   color: #777;
+}
+
+.datos-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
@@ -275,6 +362,9 @@ footer p {
     max-height: 100px;
     object-fit: cover;
   }
+  .datos-evento {
+    padding: 10px;
+  }
 }
 @media (max-width: 991px) {
   .navbar-edit {
@@ -285,6 +375,15 @@ footer p {
     font-size: 18px;
     padding: 2px 4px;
     margin: 4px 0;
+  }
+  .datos-evento {
+    padding: 10px;
+  }
+  .reserva {
+    padding: 10px;
+  }
+  .num-día {
+    font-size: 6rem;
   }
 }
 

@@ -3,20 +3,24 @@
 
 .contacto {
         form{
-        @extend .fondo-blanco;
-        margin-bottom: 15px;
-        align-items: center;
-        margin: 15px 0;
-        padding: 20px 10px 10px 10px;
-        font-family: "Special Elite", serif;
-    }
+            @extend .fondo-blanco;
+            margin-bottom: 15px;
+            align-items: center;
+            margin: 15px 0;
+            padding: 20px 10px 10px 10px;
+            font-family: "Special Elite", serif;
+        }
         .logo-contacto{
             padding: 50px;
             opacity: 0.9;
         }
+        input{
+            color:#777;
+        }
+}
 
-
-    input{
-        color:#777;
-    }
-    }
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
