@@ -1,21 +1,12 @@
 @use '../utilities/maps' as *;
 @use '../components/inicio' as *;
+@use '../utilities/mixins' as *;
 
-.organizadora {
-    text-align: left;
-    align-items: center;
-    padding: 15px;
+.organizadora  {
+    @include ficha-bios(left, center,space-around,10px 0,20px 0);
 
-    h2{
-        margin-bottom: 0;
-    }
-
-    div{
-        margin-top: 10px ;
-    }
-
-    &.dos{
-        text-align: right;
+    &:nth-child(2){
+        @include ficha-bios(right, center,space-around,10px 0,20px 0);
     }
 }
 
@@ -31,9 +22,7 @@
 
 .invitados{
     @extend .fondo-blanco;
-    margin-top: 100px;
-    padding: 20px 0;
-    justify-content: space-around;
+    @include ficha-bios(center, center,space-around,50px 0 50px 0 ,10px 0 0 0 0);
          
     img{
         max-width: 200px;

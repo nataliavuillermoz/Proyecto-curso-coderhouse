@@ -54,88 +54,188 @@
                 <h1>Agenda de próximos encuentros</h1>
             </div>
             <div class="container">
-                <div class="row d-flex justify-content-center">
 
-                    <!--ITEM FECHA AGENDADA-->
-                    <article class="col-9 col-sm-9 col-lg-12 animate__animated animate__fadeIn" >
-                        <div class="row nuevo-evento">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 fecha-prox-evento">
+                <!--ITEM FECHA AGENDADA-->
+                <article class="row d-flex justify-content-center mb-5 animate__animated animate__fadeIn">
+                    <div class="nuevo-evento col-10">
+                        <div class="row">
+                            <div class="fecha-prox-evento col-lg-3">
                                 <p class="mes-anio">ABR. 2025</p>
                                 <p class="num-día">26</p>
-                            </div>                      
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-7 datos-evento pt-1">
-                                <p><span>HORARIO: 20.00hs</span></p>
-                                <p><span>LUGAR: BIBLIOTECA POPULAR SUDESTADA - ARISTOBULO DEL VALLE 1631, VTE. LOPEZ </span></p>
-                                <p><span>LEEN:</span> ROCIO NICOLACI- LAUREANO DÍAZ MOLINA - NICHO SICILIA - MAGALÍ ENRIZ</p>
-                                <p><span>MUSICALIZAN:</span> MAGALÍ ENRIZ</p>
-                                <p><span>ENTRADA:</span> LIBRE Y GRATUITA</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center reserva">
-                                <a class="btn btn-edit" href="https://forms.gle/wU1jv1RWVmaKBCc2A">Reservar Mesa</a>
+                            <div class="datos-evento col-lg-7">
+                                <div class="row hora-lugar">
+                                    <div class="col-1">
+                                        <img src="/assets/iconos/hora.png" alt="">
+                                    </div>
+                                    <div class="col-11 hora">
+                                        <p>20:00hs</p> 
+                                    </div>
+                                </div>
+                                <div class="row hora-lugar align-items-center">
+                                    <div class="col-1">
+                                        <a href="https://maps.app.goo.gl/Eq7rjM9t5xqbGz7X8" target="_blank"><img src="/assets/iconos/ubicacion.png" alt=""></a>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>BPS - Aristobulo del Valle 1631, VTE. LOPEZ</p> 
+                                    </div>  
+                                </div>
+                                <p class="leen"><span>LEEN:</span> ROCIO NICOLACI- LAUREANO DÍAZ MOLINA - NICHO SICILIA - MAGALÍ ENRIZ</p>
+                                <p class="musicos"><span>MUSICALIZAN:</span> MAGALÍ ENRIZ - SAMANTHA PAZ</p>
+                                <p class="entrada"><span>ENTRADA LIBRE Y GRATUITA</span></p>
+                            </div>
+                            <div class="reserva col-lg-2">
+                                <a class="btn btn-edit" href="https://forms.gle/wU1jv1RWVmaKBCc2A" target="_blank">Reservar Mesa</a>
                             </div>
                         </div>
-                    </article>
-                  
-                    <!--ITEM FECHA AGENDADA-->
-                    <article class="col-9 col-sm-9 col-lg-12 animate__animated animate__fadeIn" >
-                        <div class="row nuevo-evento">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 fecha-prox-evento">
+                    </div>
+                </article>
+
+                <!--ITEM FECHA FINALIZADA-->
+                <article class="row d-flex justify-content-center mb-5 animate__animated animate__fadeIn">
+                    <div class="nuevo-evento col-10 finalizado">
+                        <div class="row">
+                            <div class="fecha-prox-evento col-lg-3">
                                 <p class="mes-anio">MAR. 2025</p>
                                 <p class="num-día">15</p>
-                            </div>                      
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-7 datos-evento pt-1">
-                                <p><span>HORARIO: 20.00hs</span></p>
-                                <p><span>LUGAR: BIBLIOTECA POPULAR SUDESTADA - ARISTOBULO DEL VALLE 1631, VTE. LOPEZ </span></p>
-                                <p><span>LEEN:</span> ROMINA DZIOVENAS - JUAN PAPPALARDO - CECILIA ENRIZ</p>
-                                <p><span>MUSICALIZAN:</span> NICHO SICILIA - MAGALÍ ENRIZ</p>
-                                <p><span>ENTRADA:</span> LIBRE Y GRATUITA</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center reserva">
-                                <a class="btn btn-inactivo">Reservar Mesa</a>
+                            <div class="datos-evento col-lg-7">
+                                <div class="row hora-lugar">
+                                    <div class="col-1 ">
+                                        <img src="/assets/iconos/hora.png" alt="">
+                                    </div>
+                                    <div class="col-11 hora">
+                                        <p>20:00hs</p> 
+                                    </div>
+                                </div>
+                                <div class="row hora-lugar align-items-center">
+                                    <div class="col-1">
+                                        <a href="https://maps.app.goo.gl/Eq7rjM9t5xqbGz7X8" target="_blank"><img src="/assets/iconos/ubicacion.png" alt=""></a>
+                                    </div>
+                                    <div class="col-11 ">
+                                        <p>BPS - Aristobulo del Valle 1631, VTE. LOPEZ</p> 
+                                    </div>  
+                                </div>
+                                <p class="leen"><span>LEEN:</span> ROCIO NICOLACI- LAUREANO DÍAZ MOLINA - NICHO SICILIA - MAGALÍ ENRIZ</p>
+                                <p class="musicos"><span>MUSICALIZAN:</span> NICHO SICILIA - MAGALÍ ENRIZ</p>
+                                <p class="entrada"><span>ENTRADA LIBRE Y GRATUITA</span></p>
+                            </div>
+                            <div class="reserva col-lg-2">
+                                <a class="btn btn-edit btn-inactivo" href="https://forms.gle/wU1jv1RWVmaKBCc2A" target="_blank">Reservar Mesa</a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <!--ITEM FECHA AGENDADA-->
-                    <article class="col-9 col-sm-9 col-lg-12 animate__animated animate__fadeIn" >
-                        <div class="row nuevo-evento">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 fecha-prox-evento">
+                <!--ITEM FECHA FINALIZADA-->
+                <article class="row d-flex justify-content-center mb-5 animate__animated animate__fadeIn">
+                    <div class="nuevo-evento col-10 finalizado">
+                        <div class="row">
+                            <div class="fecha-prox-evento col-lg-3">
                                 <p class="mes-anio">FEB. 2025</p>
                                 <p class="num-día">01</p>
-                            </div>                      
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-7 datos-evento pt-1">
-                                <p><span>HORARIO: 21.00hs</span></p>
-                                <p><span>LUGAR: BIBLIOTECA POPULAR SUDESTADA - ARISTOBULO DEL VALLE 1631, VTE. LOPEZ </span></p>
-                                <p><span>LEEN:</span> RODRI MOREYRA - LAUREANO DÍAZ MOLINA - CARLI CAMPOS - CECILIA ENRIZ</p>
-                                <p><span>MUSICALIZAN:</span> NICHO SICILIA - MAGALÍ ENRIZ</p>
-                                <p><span>ENTRADA:</span> LIBRE Y GRATUITA</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center reserva">
-                                <a class="btn btn-inactivo" >Reservar Mesa</a>
+                            <div class="datos-evento col-lg-7">
+                                <div class="row hora-lugar">
+                                    <div class="col-1">
+                                        <img src="/assets/iconos/hora.png" alt="">
+                                    </div>
+                                    <div class="col-11 hora">
+                                        <p>20:00hs</p> 
+                                    </div>
+                                </div>
+                                <div class="row hora-lugar align-items-center">
+                                    <div class="col-1">
+                                        <a href="https://maps.app.goo.gl/Eq7rjM9t5xqbGz7X8" target="_blank"><img src="/assets/iconos/ubicacion.png" alt=""></a>
+                                    </div>
+                                    <div class="col-11 ">
+                                        <p>BPS - Aristobulo del Valle 1631, VTE. LOPEZ</p> 
+                                    </div>  
+                                </div>
+                                <p class="leen"><span>LEEN:</span> BÁRBARA ALÍ - ROMINA DZIOVENAS - JUAN PAPPALARDO - CECILIA ENRIZ</p>
+                                <p class="musicos"><span>MUSICALIZAN:</span> MAGALÍ ENRIZ - SAMANTHA PAZ</p>
+                                <p class="entrada"><span>ENTRADA LIBRE Y GRATUITA</span></p>
+                            </div>
+                            <div class="reserva col-lg-2">
+                                <a class="btn btn-edit btn-inactivo" href="https://forms.gle/wU1jv1RWVmaKBCc2A" target="_blank">Reservar Mesa</a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <!--ITEM FECHA AGENDADA-->
-                    <article class="col-9 col-sm-9 col-lg-12 animate__animated animate__fadeIn" >
-                        <div class="row nuevo-evento">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 fecha-prox-evento">
+
+                <!--ITEM FECHA FINALIZADA-->
+                <article class="row d-flex justify-content-center mb-5 animate__animated animate__fadeIn">
+                    <div class="nuevo-evento col-10 finalizado">
+                        <div class="row">
+                            <div class="fecha-prox-evento col-lg-3">
                                 <p class="mes-anio">ENE. 2025</p>
                                 <p class="num-día">04</p>
-                            </div>                      
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-7 datos-evento pt-1">
-                                <p><span>HORARIO: 20.00hs</span></p>
-                                <p><span>LUGAR: BIBLIOTECA POPULAR SUDESTADA - ARISTOBULO DEL VALLE 1631, VTE. LOPEZ </span></p>
-                                <p><span>LEEN:</span> BÁRBARA ALÍ - ROMINA DZIOVENAS - JUAN PAPPALARDO - CECILIA ENRIZ</p>
-                                <p><span>MUSICALIZAN:</span> NICHO SICILIA - SANDRA LÓPEZ</p>
-                                <p><span>ENTRADA:</span> LIBRE Y GRATUITA</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center reserva">
-                                <a class="btn btn-inactivo" >Reservar Mesa</a>
+                            <div class="datos-evento col-lg-7">
+                                <div class="row hora-lugar">
+                                    <div class="col-1">
+                                        <img src="/assets/iconos/hora.png" alt="">
+                                    </div>
+                                    <div class="col-11 hora">
+                                        <p>20:00hs</p> 
+                                    </div>
+                                </div>
+                                <div class="row hora-lugar align-items-center">
+                                    <div class="col-1">
+                                        <a href="https://maps.app.goo.gl/Eq7rjM9t5xqbGz7X8" target="_blank"><img src="/assets/iconos/ubicacion.png" alt=""></a>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>BPS - Aristobulo del Valle 1631, VTE. LOPEZ</p> 
+                                    </div>  
+                                </div>
+                                <p class="leen"><span>LEEN:</span> ROCIO NICOLACI- LAUREANO DÍAZ MOLINA - NICHO SICILIA - MAGALÍ ENRIZ</p>
+                                <p class="musicos"><span>MUSICALIZAN:</span> NICHO SICILIA - SANDRA LÓPEZ</p>
+                                <p class="entrada"><span>ENTRADA LIBRE Y GRATUITA</span></p>
+                            </div>
+                            <div class="reserva col-lg-2">
+                                <a class="btn btn-edit btn-inactivo" href="https://forms.gle/wU1jv1RWVmaKBCc2A" target="_blank">Reservar Mesa</a>
                             </div>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
+
+
+                <!--ITEM FECHA FINALIZADA-->
+                <article class="row d-flex justify-content-center mb-5 animate__animated animate__fadeIn">
+                    <div class="nuevo-evento col-10 finalizado">
+                        <div class="row">
+                            <div class="fecha-prox-evento col-lg-3">
+                                <p class="mes-anio">dic. 2024</p>
+                                <p class="num-día">12</p>
+                            </div>
+                            <div class="datos-evento col-lg-7">
+                                <div class="row hora-lugar">
+                                    <div class="col-1 -1 col-md-1">
+                                        <img src="/assets/iconos/hora.png" alt="">
+                                    </div>
+                                    <div class="col-11 hora">
+                                        <p>20:00hs</p> 
+                                    </div>
+                                </div>
+                                <div class="row hora-lugar align-items-center">
+                                    <div class="col-1 ">
+                                        <a href="https://maps.app.goo.gl/Eq7rjM9t5xqbGz7X8" target="_blank"><img src="/assets/iconos/ubicacion.png" alt=""></a>
+                                    </div>
+                                    <div class="col-11 ">
+                                        <p>BPS - Aristobulo del Valle 1631, VTE. LOPEZ</p> 
+                                    </div>  
+                                </div>
+                                <p class="leen"><span>LEEN:</span> BÁRBARA ALÍ - ROMINA DZIOVENAS - JUAN PAPPALARDO - CECILIA ENRIZ</p>
+                                <p class="musicos"><span>MUSICALIZAN:</span> MAGALÍ ENRIZ - SAMANTHA PAZ</p>
+                                <p class="entrada"><span>ENTRADA LIBRE Y GRATUITA</span></p>
+                            </div>
+                            <div class="reserva col-lg-2">
+                                <a class="btn btn-edit btn-inactivo" href="https://forms.gle/wU1jv1RWVmaKBCc2A" target="_blank">Reservar Mesa</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

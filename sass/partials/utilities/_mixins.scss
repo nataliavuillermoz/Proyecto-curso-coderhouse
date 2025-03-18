@@ -4,3 +4,11 @@
     justify-content: $justify;
 };
 
+@mixin ficha-bios ($text-align, $align-items,$justify-content,$padding,$margin){
+    text-align: $text-align;
+    align-items: $align-items;
+    justify-content:$justify-content;
+    padding: $padding;
+    margin:$margin;
+
+}

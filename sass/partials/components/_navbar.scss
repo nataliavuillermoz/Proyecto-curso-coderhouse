@@ -7,11 +7,11 @@
 
     a{
         color: map-get($colors, primario);
-        font-family: "Special Elite", serif;
+        font-family: map-get($font-styles, parrafos);
         text-transform: none;
         font-size: 16px;
         padding: 2px;
-        opacity: 0.7;
+        opacity: 0.8;
         &:hover{
             opacity: 1;
             color: map-get($colors, primario);
@@ -19,9 +19,10 @@
     }
 
     .nav-link.active{
+        text-decoration: none;
         background-color:map-get($colors, primario);
         color: #fff;
-        text-decoration: none;
+        
     }
     .navbar-brand{
         max-width: 100px;

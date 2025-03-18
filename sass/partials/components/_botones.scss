@@ -2,50 +2,44 @@
 @use '../utilities/mixins' as *;
 @use '../utilities/keyframes' as *;
 
-.active{
-    animation-name: nav-hover;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in ;
-    animation-duration: 0.3s;
-}
-
-
 .btn-edit{
-    background-color: map-get($colors, secundario );
+    background-color: map-get($colors, secundario);
     border: #ccc;
     color: #fff;
     opacity: 0.9;
 
     &:hover{
         opacity: 1;
-        border: #111;
+        border: #a49e9e;
         color: #fff;
         background-color:map-get($colors, secundario);
-    }
-    
-    &:active{
-        background-color:map-get($colors, secundario);
-    }
-    
-    &:focus{
-        background-color:map-get($colors, secundario );
     }
 }
 
 .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background-color:map-get($colors, secundario);
+    color: #fff;
 }
 
 .btn-inactivo{
     @extend .btn-edit;
     background-color:grey;
     color:#ccc;
+    opacity: 1;
 
     &:hover{
         background-color:grey;
         color:#ccc;
+        opacity: 1;
         cursor: default;
     }
+}
+
+.active{
+    animation-name: nav-hover;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in ;
+    animation-duration: 0.3s;
 }
 
 .redes-sociales{
