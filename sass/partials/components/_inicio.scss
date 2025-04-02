@@ -34,10 +34,6 @@ p{
     font-size: map-get($font-sizes, s);
 }
 
-img{
-    width: 100%;
-}
-
 .titulo-section{
     background-color: map-get($colors, secundario);
     border-bottom: 1px solid map-get($colors, border);
@@ -57,6 +53,11 @@ img{
 .ajuste-contraste{
     background: #eff6fecd;
 }
+
+img{
+    width: 100%;
+}
+
 
 //PÁGINA INICIO
 
@@ -91,6 +92,7 @@ img{
    padding-right: 0;
    margin-bottom: 0;
    padding-bottom: 0; 
+
 }
 
 .fondo-blanco{

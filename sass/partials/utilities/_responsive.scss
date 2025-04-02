@@ -62,3 +62,22 @@
         text-align: center;
     }
  }
+
+ @media (min-width: 1400px){
+    .fondo-inicio img{
+        width: 100%;
+        max-height: 800px;
+        object-fit: cover;
+        display: block;
+    }
+    .presentacion-proyecto p{
+        font-size: 1.4rem;
+    }
+    .num-dia{
+        font-size: 4rem;
+    }
+ }
+
+
+
+
