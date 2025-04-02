@@ -78,6 +78,10 @@ img {
   border: 1px ridge #777;
 }
 
+.ajuste-contraste {
+  background: rgba(239, 246, 254, 0.8039215686);
+}
+
 .presentacion-proyecto {
   padding: 20px 30px;
 }
@@ -125,7 +129,7 @@ img {
   text-decoration: none;
 }
 .link-inicio p {
-  color: gray;
+  color: #303030;
   padding-top: 4px;
 }
 .link-inicio p:nth-child(1) {
@@ -286,6 +290,9 @@ img {
   animation-iteration-count: 1;
   animation-duration: 3s;
 }
+.organizadora .titulos-org {
+  color: rgb(75, 75, 75);
+}
 
 .img-nosotras {
   box-shadow: 1px 2px 3px #ccc;
@@ -322,7 +329,7 @@ img {
   margin-bottom: 0;
 }
 .item-evento p:nth-child(2) {
-  background-color: rgba(111, 124, 147, 0.5490196078);
+  background-color: rgba(111, 124, 147, 0.7921568627);
   font-size: 10px;
   line-height: 12px;
   color: #fff;
@@ -454,7 +461,7 @@ img {
 }
 .carousel-item-edit p:nth-child(2) {
   text-align: center;
-  color: gray;
+  color: #303030;
 }
 .carousel-item-edit p:hover {
   animation-name: resaltar;

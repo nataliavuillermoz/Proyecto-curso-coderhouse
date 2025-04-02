@@ -5,6 +5,7 @@
 
 .item-evento {
     padding: 25px;
+    
     img{
         @extend .border;
         padding: 2px;
@@ -21,7 +22,7 @@
         margin-bottom: 0;
     }
     p:nth-child(2){
-        background-color:#6f7c938c;
+        background-color:#6f7c93ca;
         font-size: 10px;
         line-height: 12px;
         color: #fff;
