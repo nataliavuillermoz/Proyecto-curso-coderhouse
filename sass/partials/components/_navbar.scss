@@ -1,4 +1,5 @@
 @use '../utilities/maps' as *;
+@use '../utilities/keyframes' as *;
 
 .navbar-edit{
     background-color: map-get($colors, bg);
@@ -11,10 +12,12 @@
         text-transform: none;
         font-size: 16px;
         padding: 2px;
-        opacity: 0.8;
+        opacity: 1;
         &:hover{
-            opacity: 1;
-            color: map-get($colors, primario);
+            background-color: map-get($colors, primario);
+            color: map-get($colors, txt-i);
+            opacity: 0.6;
+            animation-name: navhover;
         }
     }
 
@@ -22,6 +25,12 @@
         text-decoration: none;
         background-color:map-get($colors, primario);
         color: #fff;
+
+        &:hover{
+            background-color:map-get($colors, primario);
+            opacity: 1;
+            animation-name: none;
+        }
         
     }
     .navbar-brand{

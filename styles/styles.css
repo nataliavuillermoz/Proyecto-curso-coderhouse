@@ -5,7 +5,7 @@
   box-sizing: 0;
 }
 
-@keyframes nav-hover {
+@keyframes navhover {
   0% {
     background-color: transparent;
     color: #c38b84;
@@ -22,7 +22,7 @@
     color: #111;
   }
   50% {
-    color: rgb(166, 153, 83);
+    color: #a8a77a;
   }
   100% {
     color: #111;
@@ -30,7 +30,7 @@
 }
 body {
   background-color: #eff6fe;
-  background-image: url(../assets/img/background-web.png);
+  background-image: url(../assets/img/imagenes-web/background-web.png);
   background-size: cover;
 }
 
@@ -66,10 +66,10 @@ img {
 
 .titulo-section {
   background-color: #a8a77a;
-  color: #f0ede8;
-  padding: 5px 15px;
-  margin-bottom: 20px;
   border-bottom: 1px solid #777;
+  color: #f0ede8;
+  padding: 2px 10px;
+  margin-bottom: 20px;
 }
 .titulo-section h1 {
   font-size: 2rem;
@@ -84,12 +84,22 @@ img {
 }
 .presentacion-proyecto p {
   margin-bottom: 2px;
-}
-.presentacion-proyecto p:hover {
   animation-name: resaltar;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
   animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+.presentacion-proyecto p:nth-child(1) {
+  animation-delay: 1s;
+}
+.presentacion-proyecto p:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.presentacion-proyecto p:nth-child(3) {
+  animation-delay: 2.5s;
+}
+.presentacion-proyecto p:nth-child(4) {
+  animation-delay: 3.5s;
+  animation-duration: 6s;
 }
 
 .titulos-inicio img {
@@ -102,11 +112,56 @@ img {
   padding-bottom: 0;
 }
 
-.fondo-blanco, .formulario-contacto, .nuevo-evento, .invitados {
+.fondo-blanco, .formulario-contacto, .nuevo-evento, .invitados, .link-inicio {
   background-color: #fff;
   border: 1px ridge #777;
   box-shadow: 1px 2px 3px #ccc;
   align-items: center;
+}
+
+.link-inicio {
+  padding: 50px 0;
+}
+.link-inicio a {
+  text-decoration: none;
+}
+.link-inicio p {
+  color: gray;
+  padding-top: 4px;
+}
+.link-inicio p:nth-child(1) {
+  font-family: "Special Elite";
+  font-size: 2rem;
+  color: rgb(72, 71, 71);
+  text-decoration: none;
+}
+.link-inicio img {
+  padding: 2px;
+  border: 1px solid gray;
+  opacity: 0.9;
+}
+.link-inicio a:hover p {
+  color: #111;
+}
+.link-inicio a:hover p:nth-child(1) {
+  color: #111;
+}
+.link-inicio a:hover img {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+  border: 2px solid #c38b84;
+  opacity: 1;
+}
+.link-inicio div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link-inicio div img {
+  max-width: 120px;
+  margin: 10px;
+  padding: 2px;
 }
 
 .navbar-edit {
@@ -120,16 +175,23 @@ img {
   text-transform: none;
   font-size: 16px;
   padding: 2px;
-  opacity: 0.8;
+  opacity: 1;
 }
 .navbar-edit a:hover {
-  opacity: 1;
-  color: #c38b84;
+  background-color: #c38b84;
+  color: #f0ede8;
+  opacity: 0.6;
+  animation-name: navhover;
 }
 .navbar-edit .nav-link.active {
   text-decoration: none;
   background-color: #c38b84;
   color: #fff;
+}
+.navbar-edit .nav-link.active:hover {
+  background-color: #c38b84;
+  opacity: 1;
+  animation-name: none;
 }
 .navbar-edit .navbar-brand {
   max-width: 100px;
@@ -140,7 +202,11 @@ img {
 
 .btn-edit, .btn-inactivo {
   background-color: #a8a77a;
-  border: #ccc;
+  font-family: "Special Elite";
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 10px 8px 10px;
+  border: 1.5px solid #816d6d;
   color: #fff;
   opacity: 0.9;
 }
@@ -149,6 +215,9 @@ img {
   border: #a49e9e;
   color: #fff;
   background-color: #a8a77a;
+  border: 1.5px solid #111;
+  scale: 1.1;
+  transition: 0.2s ease-in-out;
 }
 
 .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
@@ -160,12 +229,15 @@ img {
   background-color: grey;
   color: #ccc;
   opacity: 1;
+  border: none;
 }
 .btn-inactivo:hover {
   background-color: grey;
   color: #ccc;
   opacity: 1;
   cursor: default;
+  scale: 1;
+  border: none;
 }
 
 .active {
@@ -189,6 +261,8 @@ img {
 }
 .redes-sociales a:hover {
   opacity: 1;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .organizadora {
@@ -205,14 +279,15 @@ img {
   padding: 10px 0;
   margin: 20px 0;
 }
+.organizadora h2 {
+  animation-name: resaltar;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
 
 .img-nosotras {
   box-shadow: 1px 2px 3px #ccc;
   padding: 2px;
-}
-
-.titulos-org {
-  color: #c38b84;
 }
 
 .invitados {
@@ -236,6 +311,7 @@ img {
   height: 200px;
   object-fit: cover;
   object-position: top;
+  border-radius: 10px;
 }
 .item-evento p {
   font-size: 1rem;
@@ -244,7 +320,7 @@ img {
   margin-bottom: 0;
 }
 .item-evento p:nth-child(2) {
-  background-color: #c38b84;
+  background-color: rgba(111, 124, 147, 0.5490196078);
   font-size: 10px;
   line-height: 12px;
   color: #fff;
@@ -271,7 +347,7 @@ img {
 
 .mes-anio {
   font-size: 2rem;
-  background-color: #d48b56;
+  background-color: #6f7c93;
   border-bottom: 1px solid #777;
   color: #eff6fe;
   text-transform: lowercase;
@@ -281,6 +357,7 @@ img {
 }
 
 .num-día {
+  background-color: #fff;
   color: #111;
   font-size: 4rem;
   margin-bottom: 0;
@@ -339,6 +416,10 @@ img {
 .formulario-contacto input {
   color: #777;
 }
+.formulario-contacto .form-label {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
 
 .logo-contacto {
   padding: 50px;
@@ -351,10 +432,36 @@ img {
   justify-content: center;
 }
 
+.carousel-item-edit {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 50px 0;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+  background-image: url(/assets/img/imagenes-web/recorte-hoja.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.carousel-item-edit p:nth-child(2) {
+  text-align: center;
+  color: gray;
+}
+.carousel-item-edit p:hover {
+  animation-name: resaltar;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
+.carousel-item.active {
+  animation: none;
+}
+
 footer {
   background-color: #a8a77a;
-  padding: 15px 0;
   border-top: 1px solid #777;
+  padding: 15px 0;
 }
 footer p {
   color: #f0ede8;
@@ -382,10 +489,14 @@ footer p {
     height: 400px;
     object-position: top;
   }
-  .fondo-inicio img {
-    width: 100%;
-    max-height: 100px;
-    object-fit: cover;
+  .link-inicio span {
+    font-size: 20px;
+  }
+  .link-inicio img {
+    width: 150px;
+  }
+  .texto-form {
+    text-align: center;
   }
 }
 @media (max-width: 991px) {
@@ -402,6 +513,9 @@ footer p {
 @media (max-width: 1200px) {
   .hora-lugar div:nth-child(2) {
     padding: 2px 10px;
+  }
+  .texto-form {
+    text-align: center;
   }
 }
 

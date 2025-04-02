@@ -11,22 +11,18 @@
     padding: 20px;
     @extend .fondo-blanco;
     color: map-get($colors, secundario);
-
     span{
         font-weight: 700;
         color: map-get($colors, txt);
     }
-
     p{
         margin: 0px;
-
     }
-
 }
 
 .mes-anio{
     font-size: map-get($font-sizes, m);
-    background-color: #d48b56;
+    background-color: #6f7c93;
     border-bottom: 1px solid map-get($colors, border);
     color: map-get($colors, bg);
     text-transform: lowercase;
@@ -36,6 +32,7 @@
 }
 
 .num-día{
+    background-color: #fff;
     color: #111;
     font-size: map-get($font-sizes, xl);
     margin-bottom: 0;

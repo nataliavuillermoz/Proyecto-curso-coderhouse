@@ -2,8 +2,9 @@
 
 footer{
     background-color:map-get($colors, secundario);
-    padding: 15px 0;
     border-top: 1px solid map-get($colors, border);
+    padding: 15px 0;
+    
     p{
         color: map-get($colors, txt-i);
         text-align: center;

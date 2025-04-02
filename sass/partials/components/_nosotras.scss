@@ -8,6 +8,11 @@
     &:nth-child(2){
         @include ficha-bios(right, center,space-around,10px 0,20px 0);
     }
+    h2{
+        animation-name: resaltar;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+    }
 }
 
 .img-nosotras{
@@ -16,14 +21,9 @@
     padding: 2px;
 }
 
-.titulos-org{
-    color:map-get($colors, primario);
-}
-
 .invitados{
     @extend .fondo-blanco;
-    @include ficha-bios(center, center,space-around,50px 0 50px 0 ,10px 0 0 0 0);
-         
+    @include ficha-bios(center, center,space-around,50px 0 50px 0 ,10px 0 0 0 0);     
     img{
         max-width: 200px;
         margin: 5px;

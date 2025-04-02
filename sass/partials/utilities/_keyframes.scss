@@ -1,6 +1,6 @@
 @use '../utilities/maps' as *;
 
-@keyframes nav-hover{
+@keyframes navhover{
     0% {
         background-color: transparent;
         color: map-get($colors, primario);
@@ -18,7 +18,7 @@
         color:#111;
     }
     50%{
-        color: rgb(166, 153, 83);
+        color: map-get($colors, secundario);
     }
     100% {
         color:#111;

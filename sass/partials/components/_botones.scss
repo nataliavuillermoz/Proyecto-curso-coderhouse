@@ -4,7 +4,11 @@
 
 .btn-edit{
     background-color: map-get($colors, secundario);
-    border: #ccc;
+    font-family: map-get($font-styles, parrafos );
+    font-size: 14px;
+    margin:0;
+    padding: 10px 10px 8px 10px;
+    border: 1.5px solid #816d6d;
     color: #fff;
     opacity: 0.9;
 
@@ -13,6 +17,9 @@
         border: #a49e9e;
         color: #fff;
         background-color:map-get($colors, secundario);
+        border: 1.5px solid #111;
+        scale: (1.1);
+        transition: 0.2s ease-in-out;
     }
 }
 
@@ -26,12 +33,15 @@
     background-color:grey;
     color:#ccc;
     opacity: 1;
+    border: none;
 
     &:hover{
         background-color:grey;
         color:#ccc;
         opacity: 1;
         cursor: default;
+        scale: (1);
+        border: none;
     }
 }
 
@@ -52,7 +62,9 @@
         opacity: 0.8;
         
         &:hover{
-            opacity: 1; 
+            opacity: 1;
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
         }
     }
 
