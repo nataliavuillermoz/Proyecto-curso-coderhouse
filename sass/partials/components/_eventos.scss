@@ -1,9 +1,10 @@
 @use '../utilities/maps' as *;
 @use '../components/inicio' as *;
 
+//ITEM EVENTO
+
 .item-evento {
     padding: 25px;
-
     img{
         @extend .border;
         padding: 2px;
@@ -13,14 +14,12 @@
         object-position: top;
         border-radius: 10px;
     }
-
     p{  
         font-size: map-get($font-sizes, s);
         color: map-get($colors, txt);
         text-align: justify;
         margin-bottom: 0;
     }
-
     p:nth-child(2){
         background-color:#6f7c938c;
         font-size: 10px;

@@ -2,15 +2,20 @@
 @use '../utilities/mixins' as *;
 @use '../utilities/keyframes' as *;
 
+//BOTONES
+
 .btn-edit{
     background-color: map-get($colors, secundario);
     font-family: map-get($font-styles, parrafos );
     font-size: 14px;
+    font-weight: 700;
     margin:0;
     padding: 10px 10px 8px 10px;
     border: 1.5px solid #816d6d;
     color: #fff;
+    text-shadow: 1px 1px 1px #454545;
     opacity: 0.9;
+    letter-spacing: 1px;
 
     &:hover{
         opacity: 1;
@@ -51,6 +56,8 @@
     animation-timing-function: ease-in ;
     animation-duration: 0.3s;
 }
+
+//BOTONES REDES SOCIALES
 
 .redes-sociales{
     @include flex(row,flex-start);

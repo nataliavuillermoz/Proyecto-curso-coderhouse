@@ -1,11 +1,12 @@
 @use '../utilities/maps' as *;
 @use '../utilities/keyframes' as *;
 
+//NAVBAR
+
 .navbar-edit{
     background-color: map-get($colors, bg);
     color: map-get($colors, primario);
     border-bottom: 1px solid map-get($colors, border);
-
     a{
         color: map-get($colors, primario);
         font-family: map-get($font-styles, parrafos);
@@ -20,18 +21,15 @@
             animation-name: navhover;
         }
     }
-
     .nav-link.active{
         text-decoration: none;
         background-color:map-get($colors, primario);
         color: #fff;
-
         &:hover{
             background-color:map-get($colors, primario);
             opacity: 1;
             animation-name: none;
         }
-        
     }
     .navbar-brand{
         max-width: 100px;

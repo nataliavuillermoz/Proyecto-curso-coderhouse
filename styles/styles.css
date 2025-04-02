@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -204,11 +203,14 @@ img {
   background-color: #a8a77a;
   font-family: "Special Elite";
   font-size: 14px;
+  font-weight: 700;
   margin: 0;
   padding: 10px 10px 8px 10px;
   border: 1.5px solid #816d6d;
   color: #fff;
+  text-shadow: 1px 1px 1px #454545;
   opacity: 0.9;
+  letter-spacing: 1px;
 }
 .btn-edit:hover, .btn-inactivo:hover {
   opacity: 1;
@@ -329,10 +331,6 @@ img {
   padding: 4px 4px 0 0;
 }
 
-.nuevo-evento img {
-  max-width: 25px;
-}
-
 .nuevo-evento {
   padding: 20px;
   color: #a8a77a;
@@ -343,6 +341,17 @@ img {
 }
 .nuevo-evento p {
   margin: 0px;
+}
+.nuevo-evento img {
+  width: 30px;
+  margin: 0px 0 4px 0;
+}
+
+.fecha-prox-evento {
+  padding: 0;
+  border: 1px solid #777;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
 }
 
 .mes-anio {
@@ -356,8 +365,7 @@ img {
   text-align: center;
 }
 
-.num-día {
-  background-color: #fff;
+.num-dia {
   color: #111;
   font-size: 4rem;
   margin-bottom: 0;
@@ -365,22 +373,23 @@ img {
   text-align: center;
 }
 
-.fecha-prox-evento {
-  padding: 0;
-  border: 1px solid #777;
-  text-align: center;
-  border-radius: 0 0 8px 8px;
-}
-
 .datos-evento {
   color: #111;
 }
 
-.reserva {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.hora-lugar {
   align-items: center;
+}
+.hora-lugar div {
+  flex-wrap: nowrap;
+  text-align: left;
+  padding: 0;
+  padding-left: 15px;
+  margin-top: 2px;
+}
+.hora-lugar div:nth-child(2) {
+  margin: 0;
+  padding: 4px 0;
 }
 
 .entrada {
@@ -390,17 +399,17 @@ img {
 }
 .entrada span {
   color: #c38b84;
+  border: 2px solid #c38b84;
+  padding: 5px 4px 2px 4px;
+  margin: 4px 0;
 }
 
-.hora-lugar div {
-  flex-wrap: nowrap;
-  text-align: left;
-  padding: 0;
-  padding-left: 15px;
-}
-.hora-lugar div:nth-child(2) {
-  margin: 0;
-  padding: 4px 0;
+.reserva {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0;
 }
 
 .finalizado {
@@ -495,6 +504,9 @@ footer p {
   .link-inicio img {
     width: 150px;
   }
+  .nuevo-evento img {
+    max-width: 20px;
+  }
   .texto-form {
     text-align: center;
   }
@@ -509,6 +521,12 @@ footer p {
     padding: 2px 4px;
     margin: 4px 0;
   }
+  .titulo-section {
+    text-align: center;
+  }
+  .entrada {
+    text-align: center;
+  }
 }
 @media (max-width: 1200px) {
   .hora-lugar div:nth-child(2) {
@@ -516,6 +534,14 @@ footer p {
   }
   .texto-form {
     text-align: center;
+  }
+}
+@media (min-width: 1800px) {
+  .presentacion-proyecto p {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
   }
 }
 

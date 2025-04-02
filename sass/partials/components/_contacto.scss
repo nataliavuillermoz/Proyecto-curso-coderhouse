@@ -2,6 +2,7 @@
 @use '../utilities/mixins' as *;
 @use '../components/inicio' as *;
 
+//FORMULARIO DE CONTACTO
 .formulario-contacto{
     @extend .fondo-blanco;
     font-family: map-get($font-styles, parrafos);
@@ -17,6 +18,8 @@
     }
 }
 
+//LOGO Y DATOS DE CONTACTO
+
 .logo-contacto{
     padding: 50px;
     opacity: 0.9;
@@ -26,6 +29,7 @@
     @include flex(column,center);
 }
 
+//CAROUSEL DE COMENTARIOS
 
 .carousel-item-edit{
     padding-top: 40px;
